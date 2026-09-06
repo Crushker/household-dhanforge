@@ -63,6 +63,18 @@ A workflow is included at `.github/workflows/pages.yml`. After pushing:
 1. **Settings → Pages → Source → GitHub Actions**
 2. Push to `main` — the site builds and deploys automatically.
 
+## Windows toolkit
+
+Double-click **`kk-dhanforge.bat`** in the project folder for a menu-driven script:
+
+1. Install dependencies (`npm install`)
+2. Start the dev server (`npm run dev`)
+3. Build for production (`npm run build`)
+4. **Publish to GitHub as `kk-dhanforge`** — uses the GitHub CLI if installed, otherwise falls back to plain git (prompts for your username and pushes to `main`)
+5. Open a preview of the last build
+
+Requirements: [Node.js](https://nodejs.org) and [Git](https://git-scm.com/download/win); optionally the [GitHub CLI](https://cli.github.com) for one-command repo creation.
+
 ## Tech
 
 React 18 · Vite · Tailwind CSS v4 · jsPDF + jspdf-autotable · SheetJS · deterministic seeded RNG
